@@ -1,6 +1,6 @@
 ﻿namespace Games
 {
-    partial class Question2
+    partial class Question3
     {
         /// <summary>
         /// Required designer variable.
@@ -39,69 +39,71 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Tempus Sans ITC", 18F);
-            label1.Location = new Point(170, 35);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Showcard Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(153, 48);
             label1.Name = "label1";
-            label1.Size = new Size(636, 39);
-            label1.TabIndex = 11;
-            label1.Text = "Qual desses jogadores ganhou a copa do mundo?";
+            label1.Size = new Size(695, 37);
+            label1.TabIndex = 17;
+            label1.Text = "Qual desses jogadores não joga na arábia?";
             // 
             // button5
             // 
             button5.Font = new Font("Tempus Sans ITC", 18F);
-            button5.Location = new Point(76, 420);
+            button5.Location = new Point(77, 420);
             button5.Name = "button5";
             button5.Size = new Size(311, 50);
-            button5.TabIndex = 10;
-            button5.Text = "Johan Cruyff";
+            button5.TabIndex = 16;
+            button5.Text = "Mohamed Salah";
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
             // button4
             // 
             button4.Font = new Font("Tempus Sans ITC", 18F);
-            button4.Location = new Point(76, 343);
+            button4.Location = new Point(77, 343);
             button4.Name = "button4";
             button4.Size = new Size(311, 50);
-            button4.TabIndex = 9;
-            button4.Text = "Puskás";
+            button4.TabIndex = 15;
+            button4.Text = "Sadio Mané";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
             // button3
             // 
             button3.Font = new Font("Tempus Sans ITC", 18F);
-            button3.Location = new Point(76, 259);
+            button3.Location = new Point(77, 259);
             button3.Name = "button3";
             button3.Size = new Size(311, 50);
-            button3.TabIndex = 8;
-            button3.Text = "Zico";
+            button3.TabIndex = 14;
+            button3.Text = "Cristiano Ronaldo";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
             // button2
             // 
             button2.Font = new Font("Tempus Sans ITC", 18F);
-            button2.Location = new Point(76, 186);
+            button2.Location = new Point(77, 186);
             button2.Name = "button2";
             button2.Size = new Size(311, 50);
-            button2.TabIndex = 7;
-            button2.Text = "Cristiano Ronaldo";
+            button2.TabIndex = 13;
+            button2.Text = "Kanté";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
             // button1
             // 
             button1.Font = new Font("Tempus Sans ITC", 18F);
-            button1.Location = new Point(76, 109);
+            button1.Location = new Point(77, 109);
             button1.Name = "button1";
             button1.Size = new Size(311, 50);
-            button1.TabIndex = 6;
-            button1.Text = "Nesta";
+            button1.TabIndex = 12;
+            button1.Text = "Benzema";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // Question2
+            // Question3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -116,9 +118,9 @@
             Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            Name = "Question2";
+            Name = "Question3";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Question2";
+            Text = "Question3";
             ResumeLayout(false);
             PerformLayout();
         }

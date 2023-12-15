@@ -16,17 +16,41 @@ namespace Games
         {
             InitializeComponent();
         }
-        Main formMain = new Main();
 
-        private void button1_Click(object sender, EventArgs e)
+        //Main home = new Main();
+        Question2 question2 = new Question2();
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            
+            next();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            next();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            int num = 0;
-            formMain.addAccepts(num);
+            //Correct answer
+            //home.questionPoints +=1;
+            next();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            next();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            next();
+        }
+
+        private void next()
+        {
+            this.Hide();
+            question2.ShowDialog();
         }
     }
 }

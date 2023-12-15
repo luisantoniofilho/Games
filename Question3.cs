@@ -10,20 +10,18 @@ using System.Windows.Forms;
 
 namespace Games
 {
-    public partial class Question2 : Form
+    public partial class Question3 : Form
     {
-        public Question2()
+        public Question3()
         {
             InitializeComponent();
         }
 
         //Main home = new Main();
-        Question3 question3 = new Question3();
+        Question4 question4 = new Question4();
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Corret answer
-            //home.questionPoints += 1;
             next();
         }
 
@@ -44,13 +42,16 @@ namespace Games
 
         private void button5_Click(object sender, EventArgs e)
         {
+            //Correct answer
+            //home.questionPoints += 1;
             next();
         }
 
         private void next()
         {
             this.Hide();
-            question3.ShowDialog();
+            question4.ShowDialog();
         }
+
     }
 }

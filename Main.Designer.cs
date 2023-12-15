@@ -42,18 +42,18 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Vivaldi", 25.8000011F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(305, 24);
+            label1.Font = new Font("Vivaldi", 48F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Location = new Point(378, 27);
             label1.Name = "label1";
-            label1.Size = new Size(121, 53);
+            label1.Size = new Size(217, 95);
             label1.TabIndex = 0;
             label1.Text = "Jogos";
             // 
             // button1
             // 
-            button1.Location = new Point(106, 375);
+            button1.Location = new Point(158, 443);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(143, 56);
             button1.TabIndex = 1;
             button1.Text = "Jogar";
             button1.UseVisualStyleBackColor = true;
@@ -61,9 +61,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(587, 375);
+            button2.Location = new Point(638, 443);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(143, 56);
             button2.TabIndex = 2;
             button2.Text = "Jogar";
             button2.UseVisualStyleBackColor = true;
@@ -73,7 +73,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Snap ITC", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(24, 104);
+            label2.Location = new Point(108, 177);
             label2.Name = "label2";
             label2.Size = new Size(257, 30);
             label2.TabIndex = 3;
@@ -83,7 +83,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Snap ITC", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(472, 104);
+            label3.Location = new Point(575, 177);
             label3.Name = "label3";
             label3.Size = new Size(270, 30);
             label3.TabIndex = 4;
@@ -92,9 +92,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.QuizMain;
-            pictureBox1.Location = new Point(61, 154);
+            pictureBox1.Location = new Point(116, 210);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(200, 200);
+            pictureBox1.Size = new Size(249, 227);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
@@ -102,9 +102,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.BaralhoMain;
-            pictureBox2.Location = new Point(521, 154);
+            pictureBox2.Location = new Point(585, 210);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(200, 200);
+            pictureBox2.Size = new Size(249, 227);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
@@ -114,7 +114,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(982, 583);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(label3);
@@ -122,7 +122,10 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "Main";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Games";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
