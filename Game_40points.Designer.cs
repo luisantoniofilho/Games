@@ -42,11 +42,11 @@
             label5 = new Label();
             button1 = new Button();
             button2 = new Button();
-            lblComputer = new Label();
-            lblPlayer = new Label();
             pictureBox7 = new PictureBox();
             pictureBox8 = new PictureBox();
             pictureBox9 = new PictureBox();
+            txtPlayerPoints = new TextBox();
+            txtComputerPoints = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -195,24 +195,6 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // lblComputer
-            // 
-            lblComputer.AutoSize = true;
-            lblComputer.Location = new Point(1194, 120);
-            lblComputer.Name = "lblComputer";
-            lblComputer.Size = new Size(17, 20);
-            lblComputer.TabIndex = 13;
-            lblComputer.Text = "0";
-            // 
-            // lblPlayer
-            // 
-            lblPlayer.AutoSize = true;
-            lblPlayer.Location = new Point(1194, 158);
-            lblPlayer.Name = "lblPlayer";
-            lblPlayer.Size = new Size(17, 20);
-            lblPlayer.TabIndex = 14;
-            lblPlayer.Text = "0";
-            // 
             // pictureBox7
             // 
             pictureBox7.BackColor = Color.Transparent;
@@ -237,6 +219,7 @@
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 15;
             pictureBox8.TabStop = false;
+            pictureBox8.Click += pictureBox8_Click;
             // 
             // pictureBox9
             // 
@@ -250,6 +233,20 @@
             pictureBox9.TabIndex = 17;
             pictureBox9.TabStop = false;
             // 
+            // txtPlayerPoints
+            // 
+            txtPlayerPoints.Location = new Point(1190, 158);
+            txtPlayerPoints.Name = "txtPlayerPoints";
+            txtPlayerPoints.Size = new Size(21, 27);
+            txtPlayerPoints.TabIndex = 18;
+            // 
+            // txtComputerPoints
+            // 
+            txtComputerPoints.Location = new Point(1190, 117);
+            txtComputerPoints.Name = "txtComputerPoints";
+            txtComputerPoints.Size = new Size(21, 27);
+            txtComputerPoints.TabIndex = 19;
+            // 
             // Game_40points
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -257,11 +254,11 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1271, 689);
+            Controls.Add(txtComputerPoints);
+            Controls.Add(txtPlayerPoints);
             Controls.Add(pictureBox9);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox8);
-            Controls.Add(lblPlayer);
-            Controls.Add(lblComputer);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label5);
@@ -306,10 +303,11 @@
         private Label label5;
         private Button button1;
         private Button button2;
-        private Label lblComputer;
         private Label lblPlayer;
         private PictureBox pictureBox7;
         private PictureBox pictureBox8;
         private PictureBox pictureBox9;
+        private TextBox txtPlayerPoints;
+        private TextBox txtComputerPoints;
     }
 }

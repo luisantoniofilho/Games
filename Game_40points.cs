@@ -33,6 +33,8 @@ namespace Games
             //New game
             if (newGame == 0)
             {
+                pictureBox7.Show();
+
                 int num = numBaralho();
                 pictureBox4.Load("baralho" + typeBaralho() + "-" + num + ".png");
                 playerPoints += num;
@@ -45,7 +47,7 @@ namespace Games
                 pictureBox6.Load("baralho" + typeBaralho() + "-" + num + ".png");
                 playerPoints += num;
 
-                playerPoints += num;
+                txtPlayerPoints.Text = playerPoints.ToString();
 
                 newGame = 1;
             }
@@ -55,9 +57,23 @@ namespace Games
             int num = numBaralho();
             pictureBox7.Load("baralho" + typeBaralho() + "-" + num + ".png");
             playerPoints += num;
-            if (playerPoints > 40)
 
+            if (playerPoints > 40)
+                button2_Click(sender, e);
+
+            txtPlayerPoints.Text = playerPoints.ToString();
             pictureBox8.Show();
+            
+        }
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            int num = numBaralho();
+            pictureBox8.Load("baralho" + typeBaralho() + "-" + num + ".png");
+            playerPoints += num;
+            txtPlayerPoints.Text = playerPoints.ToString();
+            pictureBox9.Show();
+            if (playerPoints > 40)
+                button2_Click(sender, e);
         }
 
         private int typeBaralho()
@@ -82,19 +98,40 @@ namespace Games
             //Finalizar
             if (newGame == 1)
             {
-                if (playerPoints > computerPoints)
-                {
-                    MessageBox.Show("Você venceu!", "Parabéns!");
-                }
-                else
+                //Baralho computer
+                int num = numBaralho();
+                pictureBox1.Load("baralho" + typeBaralho() + "-" + num + ".png");
+                computerPoints += num;
+
+                num = numBaralho();
+                pictureBox2.Load("baralho" + typeBaralho() + "-" + num + ".png");
+                computerPoints += num;
+
+                num = numBaralho();
+                pictureBox3.Load("baralho" + typeBaralho() + "-" + num + ".png");
+                computerPoints += num;
+
+                txtComputerPoints.Text = computerPoints.ToString();
+
+                if (playerPoints < computerPoints || playerPoints > 40)
                 {
                     MessageBox.Show("Você perdeu!", "Derrota");
                 }
+                else
+                {
+                    MessageBox.Show("Você venceu!", "Parabéns!");
+                }
+                
+                //Restart game
+                newGame = 1;
+
                 playerPoints = 0;
+                pictureBox7.Hide();
+                pictureBox8.Hide();
+                pictureBox9.Hide();
+                newGame = 0;
             }
         }
-
-        
 
         
     }

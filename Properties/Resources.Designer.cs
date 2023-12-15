@@ -73,9 +73,39 @@ namespace Games.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BaralhoMain {
+            get {
+                object obj = ResourceManager.GetObject("BaralhoMain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap baralhoV {
             get {
                 object obj = ResourceManager.GetObject("baralhoV", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Campo {
+            get {
+                object obj = ResourceManager.GetObject("Campo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap QuizMain {
+            get {
+                object obj = ResourceManager.GetObject("QuizMain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

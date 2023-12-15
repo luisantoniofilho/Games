@@ -38,63 +38,72 @@
             // 
             // button1
             // 
-            button1.Location = new Point(28, 122);
+            button1.Font = new Font("Tempus Sans ITC", 18F);
+            button1.Location = new Point(59, 109);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(311, 50);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Nesta";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += this.button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(28, 195);
+            button2.Font = new Font("Tempus Sans ITC", 18F);
+            button2.Location = new Point(59, 186);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(311, 50);
             button2.TabIndex = 1;
-            button2.Text = "button2";
+            button2.Text = "Cristiano Ronaldo";
             button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            button3.Location = new Point(28, 253);
+            button3.Font = new Font("Tempus Sans ITC", 18F);
+            button3.Location = new Point(59, 259);
             button3.Name = "button3";
-            button3.Size = new Size(94, 29);
+            button3.Size = new Size(311, 50);
             button3.TabIndex = 2;
-            button3.Text = "button3";
+            button3.Text = "Zico";
             button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            button4.Location = new Point(28, 305);
+            button4.Font = new Font("Tempus Sans ITC", 18F);
+            button4.Location = new Point(59, 343);
             button4.Name = "button4";
-            button4.Size = new Size(94, 29);
+            button4.Size = new Size(311, 50);
             button4.TabIndex = 3;
-            button4.Text = "button4";
+            button4.Text = "Puskás";
             button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            button5.Location = new Point(28, 367);
+            button5.Font = new Font("Tempus Sans ITC", 18F);
+            button5.Location = new Point(59, 420);
             button5.Name = "button5";
-            button5.Size = new Size(94, 29);
+            button5.Size = new Size(311, 50);
             button5.TabIndex = 4;
-            button5.Text = "button5";
+            button5.Text = "Johan Cruyff";
             button5.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(342, 24);
+            label1.Font = new Font("Tempus Sans ITC", 18F);
+            label1.Location = new Point(153, 35);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(636, 39);
             label1.TabIndex = 5;
-            label1.Text = "label1";
+            label1.Text = "Qual desses jogadores ganhou a copa do mundo?";
             // 
             // Question1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = Properties.Resources.Campo;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(979, 576);
             Controls.Add(label1);
             Controls.Add(button5);
             Controls.Add(button4);
