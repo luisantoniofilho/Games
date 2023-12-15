@@ -42,10 +42,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Showcard Gothic", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Vivaldi", 25.8000011F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.Location = new Point(305, 24);
             label1.Name = "label1";
-            label1.Size = new Size(158, 54);
+            label1.Size = new Size(121, 53);
             label1.TabIndex = 0;
             label1.Text = "Jogos";
             // 

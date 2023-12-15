@@ -16,11 +16,17 @@ namespace Games
         {
             InitializeComponent();
         }
-        
-        
+        Main formMain = new Main();
+
         private void button1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int num = 0;
+            formMain.addAccepts(num);
         }
     }
 }

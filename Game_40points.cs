@@ -19,118 +19,122 @@ namespace Games
 
         private void Game_40points_Load(object sender, EventArgs e)
         {
-            pictureBox8.Hide();
-            pictureBox9.Hide();
+            restart();
         }
 
         Random rnd = new Random();
         int playerPoints = 0;
         int computerPoints = 0;
-        int newGame = 0;
 
         private void button1_Click(object sender, EventArgs e)
         {
             //New game
-            if (newGame == 0)
-            {
-                pictureBox7.Show();
+            restart();
+            button1.Enabled = false;
+            button2.Enabled = true;
+            pictureBox7.Enabled = true;
+            pictureBox7.Show();
 
-                int num = numBaralho();
-                pictureBox4.Load("baralho" + typeBaralho() + "-" + num + ".png");
-                playerPoints += num;
+            int num = rnd.Next(4, 14);
+            pictureBox4.Load("baralho" + rnd.Next(1, 5) + "-" + num + ".png");
+            playerPoints += num;
 
-                num = numBaralho();
-                pictureBox5.Load("baralho" + typeBaralho() + "-" + num + ".png");
-                playerPoints += num;
+            num = rnd.Next(4, 14);
+            pictureBox5.Load("baralho" + rnd.Next(1, 5) + "-" + num + ".png");
+            playerPoints += num;
 
-                num = numBaralho();
-                pictureBox6.Load("baralho" + typeBaralho() + "-" + num + ".png");
-                playerPoints += num;
+            num = rnd.Next(4, 14);
+            pictureBox6.Load("baralho" + rnd.Next(1, 5) + "-" + num + ".png");
+            playerPoints += num;
 
-                txtPlayerPoints.Text = playerPoints.ToString();
-
-                newGame = 1;
-            }
+            txtPlayerPoints.Text = playerPoints.ToString();
         }
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            int num = numBaralho();
-            pictureBox7.Load("baralho" + typeBaralho() + "-" + num + ".png");
+            pictureBox7.Enabled = false;
+            int num = rnd.Next(4, 14);
+            pictureBox7.Load("baralho" + rnd.Next(1, 5) + "-" + num + ".png");
             playerPoints += num;
-
-            if (playerPoints > 40)
-                button2_Click(sender, e);
-
             txtPlayerPoints.Text = playerPoints.ToString();
             pictureBox8.Show();
-            
+            loseTest();
+
         }
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            int num = numBaralho();
-            pictureBox8.Load("baralho" + typeBaralho() + "-" + num + ".png");
+            int num = rnd.Next(4, 14);
+            pictureBox8.Load("baralho" + rnd.Next(1, 5) + "-" + num + ".png");
             playerPoints += num;
             txtPlayerPoints.Text = playerPoints.ToString();
             pictureBox9.Show();
+            loseTest();
+        }
+
+        private void computerBaralho()
+        {
+            int num = rnd.Next(1, 14);
+            pictureBox1.Load("baralho" + rnd.Next(1, 5) + "-" + num + ".png");
+            computerPoints += num;
+
+            num = rnd.Next(1, 14);
+            pictureBox2.Load("baralho" + rnd.Next(1, 5) + "-" + num + ".png");
+            computerPoints += num;
+
+            num = rnd.Next(1, 14);
+            pictureBox3.Load("baralho" + rnd.Next(1, 5) + "-" + num + ".png");
+            computerPoints += num;
+
+            txtComputerPoints.Text = computerPoints.ToString();
+        }
+
+        private void loseTest()
+        {
             if (playerPoints > 40)
-                button2_Click(sender, e);
+            {
+                MessageBox.Show("Você perdeu!", "Derrota");
+                restart();
+            }
         }
 
-        private int typeBaralho()
+        private void restart()
         {
-            int typeBaralho = rnd.Next(1, 5);
-            return typeBaralho;
+            //Restart parameters
+            playerPoints = 0;
+            txtPlayerPoints.Text = playerPoints.ToString();
+            computerPoints = 0;
+            txtComputerPoints.Text = computerPoints.ToString();
+
+            //Hide and disable objects
+            button1.Enabled = true;
+            button2.Enabled = false;
+            pictureBox7.Enabled = true;
+            pictureBox8.Enabled = false;
+            pictureBox9.Enabled = false;
+            pictureBox7.Hide();
+            pictureBox8.Hide();
+            pictureBox9.Hide();
         }
-
-        private int numBaralho()
-        {
-            int numBaralho = rnd.Next(4, 14);
-            return numBaralho;
-        }
-
-
-
-
-
 
         private void button2_Click(object sender, EventArgs e)
         {
             //Finalizar
-            if (newGame == 1)
-            {
-                //Baralho computer
-                int num = numBaralho();
-                pictureBox1.Load("baralho" + typeBaralho() + "-" + num + ".png");
-                computerPoints += num;
+            button1.Enabled = true;
+            pictureBox7.Enabled = true;
 
-                num = numBaralho();
-                pictureBox2.Load("baralho" + typeBaralho() + "-" + num + ".png");
-                computerPoints += num;
+            //Baralho computer
+            computerBaralho();
 
-                num = numBaralho();
-                pictureBox3.Load("baralho" + typeBaralho() + "-" + num + ".png");
-                computerPoints += num;
-
-                txtComputerPoints.Text = computerPoints.ToString();
-
-                if (playerPoints < computerPoints || playerPoints > 40)
+            if (playerPoints < computerPoints)
                 {
                     MessageBox.Show("Você perdeu!", "Derrota");
                 }
-                else
+            else
                 {
                     MessageBox.Show("Você venceu!", "Parabéns!");
                 }
                 
-                //Restart game
-                newGame = 1;
-
-                playerPoints = 0;
-                pictureBox7.Hide();
-                pictureBox8.Hide();
-                pictureBox9.Hide();
-                newGame = 0;
-            }
+            //Restart game
+            restart();
         }
 
         

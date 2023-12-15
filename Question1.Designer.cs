@@ -45,7 +45,6 @@
             button1.TabIndex = 0;
             button1.Text = "Messi";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -66,6 +65,7 @@
             button3.TabIndex = 2;
             button3.Text = "Klose";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -111,7 +111,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "Question1";
-            Text = "Form2";
+            Text = "Question 1";
             ResumeLayout(false);
             PerformLayout();
         }
