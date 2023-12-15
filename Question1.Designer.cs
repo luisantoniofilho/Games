@@ -43,9 +43,9 @@
             button1.Name = "button1";
             button1.Size = new Size(311, 50);
             button1.TabIndex = 0;
-            button1.Text = "Nesta";
+            button1.Text = "Messi";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += this.button1_Click;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -54,7 +54,7 @@
             button2.Name = "button2";
             button2.Size = new Size(311, 50);
             button2.TabIndex = 1;
-            button2.Text = "Cristiano Ronaldo";
+            button2.Text = "Ronaldo";
             button2.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -64,7 +64,7 @@
             button3.Name = "button3";
             button3.Size = new Size(311, 50);
             button3.TabIndex = 2;
-            button3.Text = "Zico";
+            button3.Text = "Klose";
             button3.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -74,7 +74,7 @@
             button4.Name = "button4";
             button4.Size = new Size(311, 50);
             button4.TabIndex = 3;
-            button4.Text = "Puskás";
+            button4.Text = "Gerd muller";
             button4.UseVisualStyleBackColor = true;
             // 
             // button5
@@ -84,7 +84,7 @@
             button5.Name = "button5";
             button5.Size = new Size(311, 50);
             button5.TabIndex = 4;
-            button5.Text = "Johan Cruyff";
+            button5.Text = "Pelé";
             button5.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -93,9 +93,9 @@
             label1.Font = new Font("Tempus Sans ITC", 18F);
             label1.Location = new Point(153, 35);
             label1.Name = "label1";
-            label1.Size = new Size(636, 39);
+            label1.Size = new Size(708, 39);
             label1.TabIndex = 5;
-            label1.Text = "Qual desses jogadores ganhou a copa do mundo?";
+            label1.Text = "Qual o maior artilheiro da história da copa do mundo?";
             // 
             // Question1
             // 

@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Games
 {
-    public partial class Question1 : Form
+    public partial class Question2 : Form
     {
-        public Question1()
+        public Question2()
         {
             InitializeComponent();
-        }
-        
-        
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }
