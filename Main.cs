@@ -25,6 +25,9 @@ namespace Games
             game_40Points.ShowDialog();
         }
 
-        
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

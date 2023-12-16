@@ -103,6 +103,16 @@ namespace Games.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Quiz {
+            get {
+                object obj = ResourceManager.GetObject("Quiz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap QuizMain {
             get {
                 object obj = ResourceManager.GetObject("QuizMain", resourceCulture);
