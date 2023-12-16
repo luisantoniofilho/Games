@@ -34,6 +34,8 @@
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -42,7 +44,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Showcard Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(153, 48);
+            label1.Location = new Point(150, 57);
             label1.Name = "label1";
             label1.Size = new Size(695, 37);
             label1.TabIndex = 17;
@@ -103,6 +105,17 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = Properties.Resources.Richarlison;
+            pictureBox1.Location = new Point(533, 128);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(359, 342);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 18;
+            pictureBox1.TabStop = false;
+            // 
             // Question3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -110,6 +123,7 @@
             BackgroundImage = Properties.Resources.Campo;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(982, 583);
+            Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(button5);
             Controls.Add(button4);
@@ -121,6 +135,7 @@
             Name = "Question3";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Question3";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -133,5 +148,6 @@
         private Button button3;
         private Button button2;
         private Button button1;
+        private PictureBox pictureBox1;
     }
 }

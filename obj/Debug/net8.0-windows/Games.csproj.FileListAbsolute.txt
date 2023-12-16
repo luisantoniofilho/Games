@@ -21,3 +21,4 @@ C:\DEV\C#\Games\obj\Debug\net8.0-windows\Games.Question2.resources
 C:\DEV\C#\Games\obj\Debug\net8.0-windows\Games.sourcelink.json
 C:\DEV\C#\Games\obj\Debug\net8.0-windows\Games.Question3.resources
 C:\DEV\C#\Games\obj\Debug\net8.0-windows\Games.Question4.resources
+C:\DEV\C#\Games\obj\Debug\net8.0-windows\Games.QuizResult.resources

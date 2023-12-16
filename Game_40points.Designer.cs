@@ -295,7 +295,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1271, 689);
+            ClientSize = new Size(1282, 703);
             Controls.Add(pictureBox4);
             Controls.Add(lblJogador);
             Controls.Add(lblComputer);

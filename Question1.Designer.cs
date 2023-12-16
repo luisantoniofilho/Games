@@ -34,12 +34,14 @@
             button4 = new Button();
             button5 = new Button();
             label1 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
             button1.Font = new Font("Tempus Sans ITC", 18F);
-            button1.Location = new Point(54, 107);
+            button1.Location = new Point(54, 133);
             button1.Name = "button1";
             button1.Size = new Size(311, 50);
             button1.TabIndex = 0;
@@ -50,7 +52,7 @@
             // button2
             // 
             button2.Font = new Font("Tempus Sans ITC", 18F);
-            button2.Location = new Point(54, 184);
+            button2.Location = new Point(54, 210);
             button2.Name = "button2";
             button2.Size = new Size(311, 50);
             button2.TabIndex = 1;
@@ -61,7 +63,7 @@
             // button3
             // 
             button3.Font = new Font("Tempus Sans ITC", 18F);
-            button3.Location = new Point(54, 257);
+            button3.Location = new Point(54, 283);
             button3.Name = "button3";
             button3.Size = new Size(311, 50);
             button3.TabIndex = 2;
@@ -72,7 +74,7 @@
             // button4
             // 
             button4.Font = new Font("Tempus Sans ITC", 18F);
-            button4.Location = new Point(54, 341);
+            button4.Location = new Point(54, 367);
             button4.Name = "button4";
             button4.Size = new Size(311, 50);
             button4.TabIndex = 3;
@@ -83,7 +85,7 @@
             // button5
             // 
             button5.Font = new Font("Tempus Sans ITC", 18F);
-            button5.Location = new Point(54, 418);
+            button5.Location = new Point(54, 444);
             button5.Name = "button5";
             button5.Size = new Size(311, 50);
             button5.TabIndex = 4;
@@ -94,12 +96,25 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Tempus Sans ITC", 18F);
-            label1.Location = new Point(138, 33);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Showcard Gothic", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(54, 65);
             label1.Name = "label1";
-            label1.Size = new Size(708, 39);
+            label1.Size = new Size(856, 35);
             label1.TabIndex = 5;
             label1.Text = "Qual o maior artilheiro da história da copa do mundo?";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = Properties.Resources.TacaCopa;
+            pictureBox1.Location = new Point(516, 133);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(367, 317);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
             // 
             // Question1
             // 
@@ -108,6 +123,7 @@
             BackgroundImage = Properties.Resources.Campo;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(979, 576);
+            Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(button5);
             Controls.Add(button4);
@@ -119,6 +135,7 @@
             Name = "Question1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Question 1";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -131,5 +148,6 @@
         private Button button4;
         private Button button5;
         private Label label1;
+        private PictureBox pictureBox1;
     }
 }
